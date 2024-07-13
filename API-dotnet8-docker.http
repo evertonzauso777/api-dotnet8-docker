@@ -1,0 +1,6 @@
+@API_dotnet8_docker_HostAddress = http://localhost:5235
+
+GET {{API_dotnet8_docker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
