@@ -9,7 +9,7 @@ Docker
 
 ## 🔧 Execução utilizando Docker.
 ```
-Ao baixar o projeto na pasta raiz, digite 
+Ao baixar o projeto na pasta raiz, digite: 
 
 docker build -t apidocker:1.0 .
 
@@ -20,6 +20,21 @@ No navegador utilize o link
 http:localhost:5003/swagger/index.html
 
 ```
+
+## 🔧 Execução utilizando Docker Compose
+```
+
+Ao baixar o projeto na pasta raiz, digite:
+
+docker-compose up
+
+No navegador utilize o link 
+http:localhost:5003/swagger/index.html
+
+
+```
+
+
 ## 🛠️ Construído com
 
 * [ASPNET.CORE 8]
