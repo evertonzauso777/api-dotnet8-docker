@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-dotnet8
+  labels:
+    app: api-dotnet8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-dotnet8
+  template:
+    metadata:
+      labels:
+        app: api-dotnet8
+    spec:
+      containers:
+        - name: api-dotnet8
+          image: evertonzauso777/api-net8-arm64 
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Development"
